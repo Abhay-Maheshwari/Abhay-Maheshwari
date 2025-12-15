@@ -14,34 +14,32 @@
     <td width="55%" valign="top">
       <h3>🧑‍💻 About Me</h3>
       <br>
-      
-      > 🔭 I’m currently working on **Full Stack Web Development**
-      
-      > 🌱 I’m currently learning **Cloud Architecture & DevOps**
-      
-      > 💬 Ask me about **React, Node.js, Python, or SAP ABAP**
-      
-      > ⚡ Fun fact: **I code faster after my morning coffee ☕**
-      
+      <ul>
+        <li>🔭 I’m currently working on <b>Full Stack Web Development</b></li>
+        <li>🌱 I’m currently learning <b>Cloud Architecture & DevOps</b></li>
+        <li>💬 Ask me about <b>React, Node.js, Python, or SAP ABAP</b></li>
+        <li>⚡ Fun fact: <b>I code faster after my morning coffee ☕</b></li>
+      </ul>
       <br>
-      
-      ```javascript
-      const developer = {
-          name: "Abhay Maheshwari",
-          role: "Full Stack Developer",
-          code: ["Javascript", "Python", "ABAP"],
-          tools: ["React", "Node", "Docker"],
-          coffee: true
-      };
-      ```
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abhay-Maheshwari&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6366F1&text_color=FFFFFF" alt="Top Languages" width="100%" />
     </td>
     <td width="5%" valign="top"></td>
     <td width="40%" valign="top">
       <h3>📊 Weekly Stats</h3>
       <br>
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abhay-Maheshwari&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6366F1&text_color=FFFFFF" alt="Top Languages" width="100%" />
-      <br/><br/>
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Abhay-Maheshwari&theme=tokyonight&hide_border=true&background=0D1117&ring=6366F1&fire=6366F1&currStreakLabel=6366F1" alt="GitHub Streak" width="100%" />
+      <div align="center">
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=Abhay-Maheshwari&theme=tokyonight&hide_border=true&background=0D1117&ring=6366F1&fire=6366F1&currStreakLabel=6366F1" alt="GitHub Streak" width="100%" />
+      </div>
+      <br>
+      <h3>💻 My Code</h3>
+      <pre>
+const developer = {
+  name: "Abhay",
+  role: "Full Stack",
+  code: ["JS", "Python", "ABAP"],
+  tools: ["React", "Node"],
+  coffee: true
+};</pre>
     </td>
   </tr>
 </table>
