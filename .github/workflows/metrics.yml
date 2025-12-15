@@ -52,13 +52,14 @@ jobs:
           base: ""
           config_timezone: Asia/Kolkata
           
-          # Activity plugin
+          # Activity plugin (reduced load for reliability)
           plugin_activity: yes
           plugin_activity_limit: 5
-          plugin_activity_load: 300
-          plugin_activity_days: 14
+          plugin_activity_load: 100
+          plugin_activity_days: 7
           plugin_activity_timestamps: yes
-          plugin_activity_filter: all
+          plugin_activity_filter: issue, pr, release, fork, star
+          plugin_activity_skipped: Abhay-Maheshwari
 
   # Licenses Overview
   licenses:
