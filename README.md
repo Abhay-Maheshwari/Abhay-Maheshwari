@@ -64,13 +64,7 @@ const abhay = {
 
 ---
 
-## 🏆 GitHub Trophies
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Abhay-Maheshwari&theme=discord&no-frame=true&no-bg=true&column=7&margin-w=15" alt="GitHub Trophies" />
-</p>
-
----
 
 ## 🐍 Contribution Graph
 
