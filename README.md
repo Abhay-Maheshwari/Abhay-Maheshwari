@@ -9,17 +9,6 @@
     <a href="https://abhay-maheshwari.site"><img src="https://img.shields.io/badge/Portfolio-0F172A?style=for-the-badge&logo=safari&logoColor=6366F1" alt="Portfolio"/></a>
   </p>
 </div>
-
-<br/>
-
-<!-- Dynamic Status Banner -->
-<p align="center">
-  <img src="./metrics/monthly-stats.svg" alt="Monthly Stats" width="100%" />
-</p>
-
-<br/>
-
-<!-- Main Dashboard -->
 <table align="center" border="0" cellpadding="0" cellspacing="0">
   <tr>
     <td width="55%" valign="top">
