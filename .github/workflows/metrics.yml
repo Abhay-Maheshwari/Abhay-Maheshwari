@@ -1,0 +1,129 @@
+name: GitHub Metrics
+
+on:
+  # Run automatically every 6 hours
+  schedule:
+    - cron: "0 */6 * * *"
+  # Allow manual trigger
+  workflow_dispatch:
+  # Run on push to main branch
+  push:
+    branches:
+      - main
+
+jobs:
+  # Isometric Contributions Calendar (3D Calendar)
+  isometric-calendar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Isometric Contributions Calendar
+        uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: metrics/isometric-calendar.svg
+          
+          # Base configuration
+          user: Abhay-Maheshwari
+          template: classic
+          base: ""
+          config_timezone: Asia/Kolkata
+          
+          # Isometric calendar plugin
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+
+  # Recent Activity
+  recent-activity:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Recent Activity
+        uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: metrics/recent-activity.svg
+          
+          # Base configuration
+          user: Abhay-Maheshwari
+          template: classic
+          base: ""
+          config_timezone: Asia/Kolkata
+          
+          # Activity plugin
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_load: 300
+          plugin_activity_days: 14
+          plugin_activity_timestamps: yes
+          plugin_activity_filter: all
+
+  # Licenses Overview
+  licenses:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Licenses
+        uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: metrics/licenses.svg
+          
+          # Base configuration
+          user: Abhay-Maheshwari
+          template: classic
+          base: ""
+          config_timezone: Asia/Kolkata
+          
+          # Licenses plugin
+          plugin_licenses: yes
+          plugin_licenses_setup: npm ci
+          plugin_licenses_ratio: yes
+          plugin_licenses_legal: yes
+
+  # Full Overview with Calendar
+  full-calendar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Full Calendar
+        uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: metrics/full-calendar.svg
+          
+          # Base configuration
+          user: Abhay-Maheshwari
+          template: classic
+          base: header, activity, community, repositories
+          config_timezone: Asia/Kolkata
+          
+          # Calendar plugin
+          plugin_calendar: yes
+          plugin_calendar_limit: 3
+
+  # Snake Animation (Contribution Graph)
+  snake:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Generate Snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: Abhay-Maheshwari
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+            
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
