@@ -61,51 +61,7 @@ jobs:
           plugin_activity_filter: issue, pr, release, fork, star
           plugin_activity_skipped: Abhay-Maheshwari
 
-  # Licenses Overview
-  licenses:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Licenses
-        uses: lowlighter/metrics@v3.34
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          filename: metrics/licenses.svg
-          
-          # Base configuration
-          user: Abhay-Maheshwari
-          template: classic
-          base: ""
-          config_timezone: Asia/Kolkata
-          
-          # Licenses plugin
-          plugin_licenses: yes
-          plugin_licenses_setup: npm ci
-          plugin_licenses_ratio: yes
-          plugin_licenses_legal: yes
 
-  # Full Overview with Calendar
-  full-calendar:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Full Calendar
-        uses: lowlighter/metrics@v3.34
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          filename: metrics/full-calendar.svg
-          
-          # Base configuration
-          user: Abhay-Maheshwari
-          template: classic
-          base: header, activity, community, repositories
-          config_timezone: Asia/Kolkata
-          
-          # Calendar plugin
-          plugin_calendar: yes
-          plugin_calendar_limit: 3
 
   # Snake Animation (Contribution Graph)
   snake:

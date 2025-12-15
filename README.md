@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=6366F1&center=true&vCenter=true&random=false&width=435&lines=Hey+%F0%9F%91%8B%2C+I'm+Abhay;Full+Stack+Developer;Open+Source+Enthusiast" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=6366F1&center=true&vCenter=true&random=false&width=435&lines=Hey+%F0%9F%91%8B%2C+I'm+Abhay;Full+Stack+Developer;Open+Source+Enthusiast;SAP+ABAP+Developer" alt="Typing SVG" />
 </h1>
 
 <p align="center">
@@ -48,10 +48,6 @@ const abhay = {
   <img src="./metrics/recent-activity.svg" alt="Recent Activity" />
 </p>
 
-<!-- Licenses & Repository Info -->
-<p align="center">
-  <img src="./metrics/licenses.svg" alt="Licenses" />
-</p>
 
 ---
 
