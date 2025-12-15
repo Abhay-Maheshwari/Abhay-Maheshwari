@@ -34,30 +34,7 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
 
-  # Recent Activity
-  recent-activity:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Recent Activity
-        uses: lowlighter/metrics@v3.34
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          filename: metrics/recent-activity.svg
-          
-          # Base configuration
-          user: Abhay-Maheshwari
-          template: classic
-          base: ""
-          config_timezone: Asia/Kolkata
-          
-          # Activity plugin (Simplified for reliability)
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 14
-          plugin_activity_filter: all
-          plugin_activity_visibility: all
+
 
 
   # Monthly Statistics (Replacing the old Stats Card)

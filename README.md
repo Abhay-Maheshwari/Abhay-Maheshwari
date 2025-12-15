@@ -60,9 +60,7 @@ const developer = {
   <img src="./metrics/isometric-calendar.svg" alt="Isometric Contributions Calendar" width="80%" />
 </p>
 
-<p align="center">
-  <img src="./metrics/recent-activity.svg" alt="Recent Activity" width="80%" />
-</p>
+
 
 <!-- Snake Animation -->
 <p align="center">
