@@ -62,7 +62,29 @@ jobs:
           plugin_activity_skipped: Abhay-Maheshwari
 
 
-
+  # Monthly Statistics (Replacing the old Stats Card)
+  monthly-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Monthly Statistics
+        uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: metrics/monthly-stats.svg
+          
+          # Base configuration
+          user: Abhay-Maheshwari
+          template: classic
+          base: "" 
+          config_timezone: Asia/Kolkata
+          
+          # Introduction plugin (Shows "In the last month...")
+          plugin_introduction: yes
+          plugin_introduction_period: month
+          plugin_introduction_title: yes
+          
   # Snake Animation (Contribution Graph)
   snake:
     runs-on: ubuntu-latest
